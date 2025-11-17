@@ -8,6 +8,6 @@ namespace Refactored.Movement
         private Rigidbody2D _rigidbody2D;
 
         private void Start() => _rigidbody2D = GetComponent<Rigidbody2D>();
-        public void Move(Vector2 input) => _rigidbody2D.velocity = input.normalized * speed;
+        public void Move(Vector2 input) => _rigidbody2D.linearVelocity = input.normalized * speed;
     }
 }

@@ -63,8 +63,8 @@ namespace Base
             }
             */
             
-            // Set out velocity to be equal to the _movevector multiplied with our movement speed;
-            _rigidbody2D.velocity = _moveVector * _speed;
+            // Set out velocity to be equal to the _moveVector multiplied with our movement speed;
+            _rigidbody2D.linearVelocity = _moveVector * _speed;
         }
     }
 }
